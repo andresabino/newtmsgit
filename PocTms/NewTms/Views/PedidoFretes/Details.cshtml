@@ -1,0 +1,146 @@
+﻿@model NewTms.Views.TabelaFretes.PedidoFrete
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PedidoFrete</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CepColeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CepColeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CepDestino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CepDestino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distancia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distancia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataRetiradaAgendada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataRetiradaAgendada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Largura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Largura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profundidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profundidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CargaEspecial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CargaEspecial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorFrete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorFrete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataVencimentoCNH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataVencimentoCNH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoriaCNH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoriaCNH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAprovacaoFrete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAprovacaoFrete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AprovadoFrete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AprovadoFrete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

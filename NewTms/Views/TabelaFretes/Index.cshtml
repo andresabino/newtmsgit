@@ -1,0 +1,105 @@
+﻿@model IEnumerable<NewTms.Models.TabelaFrete>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tabelas de Frete</h2>
+
+<p>
+    @Html.ActionLink("Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxaDespacho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PercentualRestricaoTrafego)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxaPedagioFracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxaServicoAdicional)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DistanciaDe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DistancaiAte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorTonelada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoDe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoAte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PercentualGris)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxaDespacho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PercentualRestricaoTrafego)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxaPedagioFracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxaServicoAdicional)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DistanciaDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DistancaiAte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorTonelada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoAte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PercentualGris)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ativo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
